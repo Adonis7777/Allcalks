@@ -4,30 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Title -->
   <title>AllCalculator – Free Online Calculators</title>
 
-  <!-- SEO Meta -->
   <meta name="description" content="AllCalculator provides free online calculators for finance, health, math, and everyday life. Fast, simple, and mobile-friendly." />
   <meta name="keywords" content="calculator, online calculator, bmi calculator, mortgage calculator, loan calculator, age calculator" />
   <link rel="canonical" href="https://totalcalc.netlify.app" />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/app-logo.png" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="AllCalculator – Free Online Calculators" />
   <meta property="og:description" content="Free calculators for finance, health, math, and daily life." />
   <meta property="og:url" content="https://totalcalc.netlify.app" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://totalcalc.netlify.app/app-logo.png" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="AllCalculator" />
   <meta name="twitter:description" content="Free online calculators for everyday use." />
 
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-59S5NK84GF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -35,12 +29,16 @@
     gtag('js', new Date());
     gtag('config', 'G-59S5NK84GF');
   </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900 dark:text-white transition-colors duration-200">
   <div id="root"></div>
 
-  <!-- ✅ ONLY ONE ENTRY -->
-  <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
